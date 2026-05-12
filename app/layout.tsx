@@ -5,8 +5,7 @@ export const metadata = {
   description: "แพลตฟอร์ม AI สำหรับบุคลากรการศึกษาไทย",
 }
 
-export default function RootLayout({ children }) {
-  return (
+eexport default function RootLayout({ children }: { children: React.ReactNode }) {
     <html lang="th">
       <body>
 
