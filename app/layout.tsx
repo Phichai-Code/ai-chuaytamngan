@@ -16,9 +16,16 @@ export default function RootLayout({
     <html lang="th">
       <body>
         <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800 px-8 py-4 flex justify-between items-center">
-          <span className="font-black text-white text-lg">
-            AI ช่วยทำงาน
-          </span>
+          <span className="font-black text-white text-lg">AI ช่วยทำงาน</span>
           <div className="flex gap-6 text-gray-400 text-sm">
-            <Link href="/"         className="hover:text-white transition-colors">หน้าแรก</Link>
-            <Link href="
+            <Link href="/" className="hover:text-white transition-colors">หน้าแรก</Link>
+            <Link href="/blog" className="hover:text-white transition-colors">บทความ</Link>
+            <Link href="/services" className="hover:text-white transition-colors">บริการ</Link>
+            <Link href="/contact" className="hover:text-white transition-colors">ติดต่อ</Link>
+          </div>
+        </nav>
+        {children}
+      </body>
+    </html>
+  )
+}
